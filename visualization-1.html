@@ -7,34 +7,38 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>        
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-5 bg-white border-bottom box-shadow">         
-                <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3">
-                        <a class= "navbar-brand" href="index.html">Latitude</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+        <div class="d-flex flex-column flex-md-row p-3 mb-5 bg-white border-bottom box-shadow">            
+            <div class="container-fluid">
+                <div class = "row">
+                    <h3><a href="index.html" class = "text-dark">Latitude</a></h3>
+                    <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3 ml-auto">              
+                        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon ml-auto"></span>
                         </button>
-                        <div class="navbar-collapse collapse show" id="navbarCollapse" style>
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="navbar-collapse collapse ml-auto" id="navbarCollapse" style>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown ml-auto active">
+                                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                                     Plots
                                     </a>
-                                    <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/visualization-1.html">Max Temperature</a>
-                                    <a class="dropdown-item" href="/visualization-2.html">Humidity</a>
-                                    <a class="dropdown-item" href="/visualization-3.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="/visualization-4.html">Wind Speed</a>
+                                    <div class="dropdown-menu ml-auto">
+                                    <a class="dropdown-item ml-auto" href="/visualization-1.html">Max Temperature</a>
+                                    <a class="dropdown-item ml-auto" href="/visualization-2.html">Humidity</a>
+                                    <a class="dropdown-item ml-auto" href="/visualization-3.html">Cloudiness</a>
+                                    <a class="dropdown-item ml-auto" href="/visualization-4.html">Wind Speed</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item ml-auto">
                                     <a class="nav-link" href="/data.html">Data</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item ml-auto">
                                     <a class="nav-link" href="/comparison.html">Comparison</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
+                </div>
+            </div>
         </div>
         <div class ="container-fluid">
         <div class = "row mt-auto">
@@ -43,7 +47,7 @@
                 <h1 class = "display-5 p-3">Max Temperature</h1>
                 <hr/>
                     <img src="\Resources\assets\images\Fig1.png" class="img-fluid center" alt="Max Temperature">
-                    <p class = "display-6 p-3">Max Temperature chart shows the relationship between Latitude and Max Temperature for the globe. As expected, the closer to the equator, the higher the temperature is. For the same latitude, southern atmosphere has higher temperature</p>
+                    <p class = "display-6 p-3">Max Temperature chart shows the relationship between the city latitude and their max temperatures. As expected, the closer to the equator, the higher the temperature is. For the same latitude, southern atmosphere has higher temperature than the northern atmosphere.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -78,6 +82,7 @@
                               <img class = "thumbnail thumbnail-sm border border-bottom rounded image-fluid" src="\Resources\assets\images\Fig4.png" alt="Wind Speed">
                             </a>
                         </div>
+                        <div class="padding"></div>
                     </div>
                 </div>
             </div>
