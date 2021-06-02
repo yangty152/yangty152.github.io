@@ -2,19 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Langing-Page</title>
+        <title>Humidity</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-5 bg-white border-bottom box-shadow">             
-            <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3">
+    <body>        
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-5 bg-white border-bottom box-shadow">         
+                <nav class ="navbar navbar-expand-md navbar-light my-0 my-md-0 mr-md-3">
                         <a class= "navbar-brand" href="index.html">Latitude</a>
-                        <button class="navbar-toggler nav" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="navbar-collapse collapse show" id="navbarCollapse" style>
-                            <ul class="navbar-nav mr-auto justify-content-end">
+                            <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Plots
@@ -40,19 +40,16 @@
         <div class = "row mt-auto">
             <div class="col-md-8">
                 <div class="p-3 bg-light">
-                <h1 class = "display-5 p-3">Summary: Latitude vs. X</h1>
+                <h1 class = "display-5 p-3">Humidity</h1>
                 <hr/>
-                <p class = "display-6 p-3"><img src="\Resources\assets\images\Fig1.png" class="img-fluid left pr-4" style="float:left" alt="...">The purpose of this projet was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
-                <p class = "display-6 p-3">After assembling the datasset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-            </div>
+                <img src="\Resources\assets\images\Fig2.png" class="img-fluid center" alt="Humidity">
+                <p class = "display-6 p-3">Humidity graph shows the relationship between Latitude and humidity. The humidity doesn't seem have a strong relationshiop with Latitude, from northern to the southern atmosphere, humidity number is pretty evenly distributed. around latitude 20 and latitude -20, the humidity has a wider range (10% - 100%), and around latitude 60-80, there are certain places are very dry (with 0% humidity).</p>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="bg-light p-3">
-                <h1 class = "display-5 p-3">Visualizations</h1>
-                <hr/>
+                    <h1 class = "display-5 p-3">Visualizations</h1>
+                    <hr/>
                 <div class="row">
                     <div class = "col-md-5 col-sm-3 ml-md-1 p-3">
                         <div class="thumbnail p-4">
@@ -64,7 +61,7 @@
                     <div class = "col-md-5 col-sm-3 ml-md-1 p-3">
                         <div class="thumbnail p-4">
                         <a href="/visualization-2.html">
-                          <img class = "thumbnail thumbnail-sm border border-bottom rounded image-fluid" src="\Resources\assets\images\Fig2.png" alt="Humidity">
+                          <img class = "thumbnail thumbnail-sm border border-secondary rounded" src="\Resources\assets\images\Fig2.png" alt="Humidity">
                         </a>
                         </div>
                     </div>            
