@@ -1,6 +1,3 @@
-# Web-Design-Challenge
+# Belly Button Biodiversity Dashboard
 
-issue -
-thumbnail overflow the row when shrink the broswer
-drop down doesn't work
-small screen menu doesn't function fully
+Content is copied from Plotly Challenge Repository.
