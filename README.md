@@ -1,3 +1,3 @@
 # Belly Button Biodiversity Dashboard
 
-Content is copied from Plotly Challenge Repository.
+Please select an sample ID to load the bar chart, bubble chart and the gauge chart for the study.
